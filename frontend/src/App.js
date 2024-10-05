@@ -4,8 +4,18 @@ import { Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/Footer';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const App = () => {
+	const location = useLocation();
+
+	useEffect(() => {
+		if (location.pathname !== '/api/product') {
+			document.title = 'PCBay - Best PC Products for cheap';
+		}
+	}, [location]);
+
 	return (
 		<>
 			<Header />

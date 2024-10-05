@@ -98,10 +98,8 @@ const ProductScreen = () => {
 										text={`${product.numReviews} reviews`}
 									/>
 								</ListGroup.Item>
-								<ListGroup.Item>Price: ${product.price}</ListGroup.Item>
-								<ListGroup.Item>
-									Description: {product.description}
-								</ListGroup.Item>
+
+								<ListGroup.Item>{product.description}</ListGroup.Item>
 							</ListGroup>
 						</Col>
 
@@ -166,7 +164,14 @@ const ProductScreen = () => {
 					</Row>
 					<Row className='review'>
 						<Col md={6}>
-							<h2>Reviews</h2>
+							<h2>
+								Reviews
+								<Rating
+									value={product.rating}
+									text={`${product.numReviews} reviews`}
+								/>
+							</h2>
+
 							{product.reviews.length === 0 && <Message>No Reviews</Message>}
 							<ListGroup variant='flush'>
 								{product.reviews.map((review) => (

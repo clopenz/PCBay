@@ -33,8 +33,7 @@ const Header = () => {
 			<Navbar bg='dark' variant='dark' expand='md' collapseOnSelect>
 				<Container>
 					<Navbar.Brand as={Link} to='/'>
-						<img src={logo} alt='ProShop' />
-						ProShop
+						<img src={logo} alt='PCBay' />
 					</Navbar.Brand>
 
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
