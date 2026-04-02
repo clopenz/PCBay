@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaGithub } from 'react-icons/fa';
 import { FaSquareUpwork } from 'react-icons/fa6';
 
 const Footer = () => {
@@ -13,21 +13,19 @@ const Footer = () => {
 						<p>PCBay &copy; {currentYear}</p>
 					</Col>
 					<Col className='py-3'>
-						<small>DISCLAIMER: This is not an official website, do not use your personal information.</small>
+						<small>
+							DISCLAIMER: This is not an official website, do not use your
+							personal information.
+						</small>
 					</Col>
 					<Col className='py-3'>
 						<ul className='socials'>
 							<li>
-								<a href='https://chriswebdev.me'>Portfolio</a>
+								<a href='https://www.ellisondesign.dev'>Portfolio</a>
 							</li>
 							<li>
-								<a href='mailto:clopenz@outlook.com'>
+								<a href='mailto:contact@ellisondesign.dev'>
 									<FaEnvelope />
-								</a>
-							</li>
-							<li>
-								<a href='https://www.linkedin.com/in/cristian-lopez-643245179/'>
-									<FaLinkedin />
 								</a>
 							</li>
 							<li>
